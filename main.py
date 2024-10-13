@@ -1,8 +1,20 @@
+from PyQt6.QtWidgets import QApplication
+from sys import argv
 
-def main():
-    print("Hello World")
+
+class App(QApplication):
+    def __init__(self):
+        super().__init__(argv)
+        
+    
+
     
 
 
+
+
+
+
 if __name__ == "__main__":
-    main()
+    app = App()
+    app.exec()
