@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import QApplication
-from sys import argv
+from sys import argv,exit
 
 
 class App(QApplication):
@@ -17,4 +17,4 @@ class App(QApplication):
 
 if __name__ == "__main__":
     app = App()
-    app.exec()
+    exit(app.exec())
